@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Scientific Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="calculator">
+
+        <!-- Display -->
+        <div class="display">
+            <div id="expression">Ready</div>
+            <div id="result">0</div>
+        </div>
+
+        <!-- Angle Mode -->
+        <div class="mode-row">
+            <button id="angleMode" class="mode-button">DEG</button>
+            <span>Scientific Calculator</span>
+        </div>
+
+        <!-- Buttons -->
+        <div class="buttons">
+
+            <!-- Scientific Functions -->
+            <button class="function" data-action="sin">sin</button>
+            <button class="function" data-action="cos">cos</button>
+            <button class="function" data-action="tan">tan</button>
+            <button class="function" data-action="log">log</button>
+            <button class="function" data-action="ln">ln</button>
+            <button class="function" data-action="sqrt">√</button>
+
+            <button class="function" data-action="square">x²</button>
+            <button class="function" data-action="power">xʸ</button>
+            <button class="function" data-action="factorial">x!</button>
+            <button class="function" data-action="pi">π</button>
+            <button class="function" data-action="e">e</button>
+            <button class="function" data-action="percent">%</button>
+
+            <!-- Control / Operators -->
+            <button class="danger" data-action="clear">AC</button>
+            <button class="danger" data-action="delete">⌫</button>
+
+            <button class="operator" data-value="(">(</button>
+            <button class="operator" data-value=")">)</button>
+            <button class="operator" data-value="÷">÷</button>
+            <button class="operator" data-value="×">×</button>
+
+            <!-- 7 8 9 -->
+            <button data-value="7">7</button>
+            <button data-value="8">8</button>
+            <button data-value="9">9</button>
+
+            <button class="operator" data-value="−">−</button>
+
+            <button class="function" data-action="ans">Ans</button>
+            <button class="function" data-action="negate">±</button>
+
+            <!-- 4 5 6 -->
+            <button data-value="4">4</button>
+            <button data-value="5">5</button>
+            <button data-value="6">6</button>
+
+            <button class="operator" data-value="+">+</button>
+
+            <button data-value=".">.</button>
+
+            <button class="equals" data-action="equals">=</button>
+
+            <!-- 1 2 3 -->
+            <button data-value="1">1</button>
+            <button data-value="2">2</button>
+            <button data-value="3">3</button>
+
+            <!-- 0 -->
+            <button class="zero" data-value="0">0</button>
+
+        </div>
+
+        <p class="keyboard-info">
+            Keyboard supported • Enter = Calculate • Esc = Clear • Backspace = Delete
+        </p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
